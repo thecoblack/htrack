@@ -4,12 +4,6 @@ import os
 
 from omegaconf import OmegaConf, DictConfig
 
-# habits /   19/2   20/2
-# habitname: x
-# habitname: x      x
-
-# TODO: GRAPH
-# TODO: print last week
 class HTrack:
     def __init__(self, config: DictConfig):
         self.habits = {}
