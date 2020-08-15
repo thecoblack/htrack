@@ -1,4 +1,4 @@
-Command line habit tracker. Why ? Because I was bored.
+Command line habit tracker. Why ? I was reading a book that mentioned habits and what better to do this instead of reading.
 
 ## Setup
 
