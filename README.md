@@ -1,12 +1,12 @@
 Command line habit tracker. Why ? Because I was bored.
 
-## Setup
+## Setup
 
 Install the package
 
 `pip install .`
 
-The following command will create the necessary files in $HOME/.local/share/htrack
+The following command will create the necessary files.
 
 `htrack setup`
 
@@ -27,3 +27,7 @@ List all your habits
 Show a timeline of your progress the last days
 
 `htrack habits timeline`
+
+Show a plot of your progress the last days
+
+`htrack habits plot`

@@ -45,16 +45,16 @@ class HTrack:
         """
         show last 7 days
         """
-        timeline = '\t'
+        timeline = '\t\t'
         dates = []
-        for day in range(days, -1, -1):
+        for day in range(days-1, -1, -1):
             that_day = datetime.datetime.now() - datetime.timedelta(days=day)
             pretty_date = str(that_day.month) + '/' + str(that_day.day)
             timeline += pretty_date + '\t'
             dates.append(that_day)
         timeline += '\n'
         for habit in self.habits:
-            timeline += habit + '\t'
+            timeline += habit + '\t\t'
             for day in dates:
                 if self.habits[habit].day_complete(day):
                     timeline += 'X\t'
@@ -69,7 +69,7 @@ class HTrack:
         """
         dates = []
         pretty_dates = []
-        for day in range(days, -1, -1):
+        for day in range(days-1, -1, -1):
             that_day = datetime.datetime.now() - datetime.timedelta(days=day)
             pretty_date = str(that_day.month) + '/' + str(that_day.day)
             pretty_dates.append(pretty_date)
