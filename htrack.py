@@ -39,29 +39,7 @@ class HTrack:
 
     def complete_habit(self, habit):
         self.habits[habit].complete()
-        self.save()
-
-    # def timeline(self, days=7):
-    #     """
-    #     show last 7 days
-    #     """
-    #     timeline = '\t\t'
-    #     dates = []
-    #     for day in range(days-1, -1, -1):
-    #         that_day = datetime.datetime.now() - datetime.timedelta(days=day)
-    #         pretty_date = str(that_day.month) + '/' + str(that_day.day)
-    #         timeline += pretty_date + '\t'
-    #         dates.append(that_day)
-    #     timeline += '\n'
-    #     for habit in self.habits:
-    #         timeline += habit + '\t\t'
-    #         for day in dates:
-    #             if self.habits[habit].day_complete(day):
-    #                 timeline += 'X\t'
-    #             else:
-    #                 timeline += ' \t'
-    #         timeline += '\n'
-    #     print(timeline)    
+        self.save() 
 
     def timeline(self, days=7):
         self.timeline = '{}'.format(' '*self._max_length_word(), end='')        
